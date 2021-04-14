@@ -1,7 +1,7 @@
 import {useState} from "react"
 
 const LanguageState=()=>{
-    const {state, setState}=useState({value: 'qq', list:[]})
+    const [state, setState]=useState({value: 'es', list:[]})
 
     const actions=(action)=>{
         const {type,payload}=action
