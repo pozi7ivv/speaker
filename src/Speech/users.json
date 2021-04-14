@@ -1,0 +1,17 @@
+// const express=require('express')
+// const app=express()
+// const cors =require('cors')
+// app.use(cors())
+//
+// const users=['Yura', 'Denys']
+//
+// app.get(
+//     '/users', (req,res)=>
+//     {
+//         res.send(users)
+//     })
+// app.listen(3000,()=>
+//     {
+//         console.log('running')
+//     }
+// )
