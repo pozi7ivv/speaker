@@ -37,24 +37,27 @@ function SpeechText(){
     }
 
     function stopRecord(){
-        //input.bind.value=transcript
        return SpeechRecognition.stopListening
-        input.bind.value=transcript
     }
 
     return(
         <div className="container 1div">
 
-
+        <div>
                 <form onSubmit={submitHandler}>
+                    <h2>Say something...</h2>
                     <button onClick={startRecord()}>Start listening</button>
                     <button onClick={stopRecord()}>Stop listening</button>
-
-
-
-                <input className={"input-group-text"} {...input.bind} placeholder={"Enter text..."}/>
-                <button className={"btn-sm btnn"} onClick={sayHello}>Say</button>
+                    <br/><br/>
+                    <input className={"input-group-text"} value={transcript}></input>
                 </form>
+            <br/>
+        </div>
+                <h2>Enter something...</h2>
+                <input className={"input-group-text"} {...input.bind} placeholder={"Enter text..."}/>
+                <br/>
+                <button className={"btn-sm btnn"} onClick={sayHello}>Say</button>
+
         </div>
     )
 }

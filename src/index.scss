@@ -30,7 +30,7 @@ code {
 }
 
 .btnn{
-  width: 12rem;
+  width: 13rem;
 }
 
 body {
@@ -129,5 +129,12 @@ button:disabled {
         float: left;
         width: 20%;
   height: 100px;
-    display: inline-block;
-  }
+    display: inline-block;}
+
+.footer{
+  background-color: #2c86ff;
+  height: 4.5rem;
+  color: white;
+}
+
+

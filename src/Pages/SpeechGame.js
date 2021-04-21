@@ -1,5 +1,5 @@
 import React from 'react'
-import * as data from '../Speech/users.json'
+import * as data from '../Speech/data.json'
 import Game from "../Speech/Exercise/Game"
 
 function SpeechGame({language}){

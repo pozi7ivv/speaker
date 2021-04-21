@@ -3,7 +3,6 @@ import {NavLink} from 'react-router-dom'
 import Context from "../Speech/language/languageContext";
 import Select from "react-select";
 
-
 export const NavBar=()=> {
 
     const opt = [
@@ -22,7 +21,6 @@ export const NavBar=()=> {
             actions({type: 'setState', payload: {...state, value: selectedOption.value}})
 
             alert(`Your language: ${selectedOption.label}`)
-
         }
 
         render() {
@@ -42,7 +40,7 @@ export const NavBar=()=> {
     return(
     <nav className={"navbar navbar-dark navbar-expand-lg bg-primary"}>
         <div className="container-fluid">
-            <a className="navbar-brand nav" href="/">Speaker</a>
+            <NavLink className="navbar-brand nav" to="/">Speaker</NavLink>
 
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav">
@@ -61,16 +59,11 @@ export const NavBar=()=> {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/test">Test</NavLink>
-                    </li>
-
                 </ul>
             </div>
             <div>
                 <App/>
             </div>
-
         </div>
     </nav>)
 }

@@ -1,6 +1,6 @@
 import React,{Fragment} from 'react'
 import ReadText from "../Speech/Exercise/ReadText";
-import * as data from "../Speech/users.json";
+import * as data from "../Speech/data.json";
 
 const SpeechRead=({language})=>{
 
