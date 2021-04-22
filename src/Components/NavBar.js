@@ -53,9 +53,7 @@ export const NavBar=()=> {
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/game">Game</NavLink>
                     </li>
-                    <li className="nav-item">
-                        <NavLink className="nav-link" to="/read">ReadText</NavLink>
-                    </li>
+
                     <li className="nav-item">
                         <NavLink className="nav-link" to="/about">About</NavLink>
                     </li>

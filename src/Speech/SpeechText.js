@@ -29,6 +29,8 @@ function SpeechText(){
     function sayHello(){
         const say=new SpeechSynthesisUtterance(input.value())
         say.rate=1.5
+        const voice=synth.current.getVoices()
+        say.voice=voice[2]
         synth.current.speak(say)
     }
 
